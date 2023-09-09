@@ -1,0 +1,136 @@
+
+//文字字型
+.font-noto-sans {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.font-shrikhand {
+  font-family: "Shrikhand", cursive;
+}
+
+.font-saira {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+//文字大小以及粗細
+.fw-350{
+  font-weight: 350;
+}
+.fs-8{
+  font-size: 8px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-m {
+  font-size: 128px;
+}
+.fs-md-32 {
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+.mt-8{
+  margin-top: 8px;
+}
+.mb-12{
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+  
+.mb-18 {
+    margin-bottom: 18px;
+}
+  
+.mb-md-20 {
+    @media (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+}
+  
+.mb-md-80 {
+    @media (min-width: 768px) {
+      margin-bottom: 80px;
+    }
+}
+.pt-90{
+  padding-top: 90px;
+}
+.ls-16{
+  letter-spacing:16px;
+}
+.ls-26{
+  letter-spacing:26px;
+}
+.ls-48{
+  letter-spacing:48px;
+}
+
+.mx-20{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.my-32{
+  margin-top:2rem!important;
+  margin-bottom:2rem!important
+}
+
+.gap-24{
+  gap:1.5rem!important;
+}
+.py-52{
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.pill-btn-hover{
+    &:hover{
+      background-color: #ffffff;
+      color:#7000FF;
+    }
+    &.active{
+      background-color: #ffffff;
+      color:#000;
+    }
+}
+
+.bg-parimary {
+  background-color: #6d01f7;
+}
+
+.text-black {
+  color: #000000;
+}
+
+//~~~~~~
+.radialGradDark{  //radialToDark
+  background:radial-gradient(50% 50% at 50% 50%,#000 0%,#28085C 100%);
+}
+
+
+.lightToDark{  //linearToDark
+  background:linear-gradient(90deg,#7000FF 0%,#11002D 100%);
+  height:40px;
+}
+
+.darkToLight{  //linearToLight
+  background:linear-gradient(90deg,#11002D 0%,#7000FF 100%);
+  height:40px;
+}

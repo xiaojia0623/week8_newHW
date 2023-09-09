@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>登入</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <%- include('./layout/header'); -%>
+    
+    <!-- sign in title section -->
+    <div class="signin">
+        <div class="container">
+            <h2 class="text-white font-Noto">登入</h2>
+            <div class="roundLogo">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true" alt="旋轉圖">
+                <p class="text-white font-Shrikhand">ALPHABOX+</p>
+            </div>
+        </div>
+        
+        <div class="signInBtns">
+            <div class="container">
+                <a href="#" class="btn rounded-pill mb-3">
+                    <img src="/assets/images/Apple Icon.png" alt="apple">
+                    <p>Continue with Apple</p>
+                </a>
+                <a href="#" class="btn rounded-pill">
+                    <img src="/assets/images/Google Icon.png" alt="apple">
+                    <p>Continue with Google</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="container justify-content-center">
+            <div class="row">
+              <div class="col-md-6 mx-auto">
+                <ol class="pay-list d-flex justify-content-between list-unstyled position-relative">
+                  <li class="d-flex flex-column align-items-center">
+                    <p class="number d-flex justify-content-center align-items-center mb-0">or</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+        </div>
+
+        <div class="container signInput">
+            <div class="signform">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="font-Noto">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="密碼">
+                    <label for="floatingPassword" class="font-Noto">密碼</label>
+                </div>
+                <div class="form-btn mb-3">
+                    <a href="#" class="col-6 fbtn btn-primary d-flex text-center">
+                      <span class="material-symbols-outlined">point_scan</span>
+                      <p class="m-0">立即登入</p>
+                    </a>
+                </div>
+                <div class="willLogin">
+                    <a href="#" class="text-white text-end">忘記密碼</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 首頁 表尾 -->
+    <%- include('./layout/footer'); -%>
+
+    
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

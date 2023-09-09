@@ -1,0 +1,237 @@
+
+//aboutus-banner
+.about{
+    background: linear-gradient(to right, #300871, #000000);
+    .aboutTitle{
+        h2{
+            font-size: 48px;
+            line-height: 72px;
+            letter-spacing: 50px;
+        }
+    }
+    .aboutus{
+        .container{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            .aboutIcon{
+                font-size: 80px;
+                color:#ffffff;
+                object-fit: cover;
+                
+            }
+        }
+    }
+}
+@include iphone{
+    .about{
+        flex-direction: column;
+        padding: 35px 0;
+        .aboutTitle{
+            .container{
+                padding: 0 12px;
+            }
+            h2{
+                font-size: 40px;
+                letter-spacing: 20px;
+            }
+            br{
+                margin-bottom: 20px;
+            }
+            .aboutCon{
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+    .aboutus{
+        .container{
+            padding: 0 12px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .aboutIcon{
+            margin: 0 auto;
+        }
+        p{
+            br{
+                display: none;
+            }
+        }
+    }
+}
+
+//aboutus-middle picture
+.middlePart{
+    .threePicture{
+        padding: 30px 30px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        img{
+            width: 560px;height: 315px;
+            object-fit: cover;
+        }
+    }
+    h3{
+        font-size: 96px;
+        line-height: 144px;
+        letter-spacing: 50px;
+        text-align: center;
+    }
+    .middleContent{
+        display: flex;
+        justify-content: center;
+        margin:auto 0;
+        //padding: 0 30px;
+        margin-bottom: 20px;
+        .purpleSpan{
+            padding: 0 12px;
+            span{
+                position:relative;
+                display:inline-block;
+                z-index:2;
+                &::before{
+                    content:"";
+                    position:absolute;
+                    z-index:-1;
+                    top:50%;left:-16%;
+                    width:70px;height:10px;
+                    margin:0 4px;
+                    display:inline-block;
+                    background:#E9E2F3
+                  }
+            }
+        }
+    }
+    .lines{
+        padding: 0 30px;
+        width: 100%;
+        .thinLine{
+            //max-width: 100%;
+            border:1px solid #000;
+            opacity: 1;
+            margin-bottom: 10px;
+        }
+        .bigLine{
+            //max-width: 100%;
+            border:12px solid #000;
+            opacity: 1;
+            margin-bottom: 10px;
+        }
+    }
+    .meeting{
+        //.container{
+            //display: flex;
+            //justify-content: center;
+            //align-items: center;
+        //}
+        img{
+            width: 746px;height: 315px;
+            object-fit: cover;
+        }
+        p{
+            padding:10px;
+            font-weight: bold;
+        }
+    }
+}
+@include pad{
+    .middlePart{
+        h3{
+            font-size: 70px;
+            letter-spacing: 30px;
+        }
+        .meeting{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+@include iphone{
+    .middlePart{
+        .threePicture{
+            padding: 30px 12px 5px 12px;
+            img{
+                width: 100%;height: 100%;
+                object-fit: cover;
+            }
+        }
+        h3{
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 15px;
+            text-align: center;
+        }
+        .middleContent{
+            flex-direction: column;
+            padding: 0px 12px;
+        }
+        .lines{
+            padding: 0 12px;
+        }
+        .meeting{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            p{
+                padding: 10px 0px;
+            }
+        }
+    }
+    
+}
+
+//aboutus-check career
+.checkCareer{
+    background: #000;
+    .container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 26px 0;
+    }
+    p{
+        color:#ffffff;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .checkBtn{
+        text-decoration: none;
+        background: #fff;
+        display: flex;
+        padding: 8px 32px; margin: 0 30px;
+        border-radius: 4px;
+        align-items: center;
+        &:hover{
+            background: #7000FF;
+            color:#ffffff;
+        }
+        p{
+            color:#000;
+            display: contents;
+        }
+    }
+}
+
+@include iphone{
+    .checkCareer{
+        .container{
+            padding: 20px 12px;
+            max-width: 100%;
+            .checkBtn{
+                width: 100%;
+                margin: 0;
+                justify-content: center;
+            }
+        }
+    }
+        
+}

@@ -1,0 +1,59 @@
+.navbar{
+  background: #7000FF;
+  border-bottom: 1px solid #ffffff;
+  h1{
+    a{
+      font-size:32px;
+      color:#ffffff;
+      line-height: 48px;
+      font-style: italic;
+      font-weight: bold;
+      font-family: 'Shrikhand';
+    }
+  }
+}
+.navbar-nav{
+  text-align:center;
+}
+.nav-item{
+  .nav-link{
+  color:#ffffff;
+  }
+  .subBtn{
+    display:flex;
+    justify-content:center;
+    width:92px; height:40px;
+    border-radius:4px;
+    align-items:center;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+      background-color: #E9E2F3;
+    }
+    span{
+      margin-right:2px;
+      width:24px; height:24px;
+      color:#000;
+    }
+    p{
+      margin: 0;
+      color:#000;
+    }
+}
+}
+@include pad{
+  .nav-item{
+    justify-content: center;
+    display: flex;
+  }
+}
+@include iphone{
+  .navbar{
+    padding:0 12px;
+    background:linear-gradient(to bottom, #7000FF, #11002D);
+  }
+  .nav-item{
+    justify-content: center;
+    display: flex;
+  }
+}

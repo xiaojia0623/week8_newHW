@@ -1,0 +1,238 @@
+.signin{
+    padding: 90px 0;
+    background:  radial-gradient(circle closest-side at center, #28085C, #000000);
+    .container{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        h2{
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 96px;
+            letter-spacing: 55px;
+            margin-right: 24%;
+        }
+        .roundLogo{
+            text-align: center;
+            img{
+                width: 196px;height: 196px;
+                object-fit: cover;
+                margin-bottom: 10px;
+                animation: move 6s linear infinite;
+            }
+            p{
+                font-size: 32px;
+                font-weight: bold;
+                font-style: italic;
+                line-height: 48px;
+                font-family: "Shrikhand", cursive;
+            }
+        }
+    }
+    .signInBtns{
+        .container{
+            margin: 0 auto;
+            max-width: 1296px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .btn{
+            width: 396px;
+            //width:100%;
+            //width: 416px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            //border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            img{
+                align-self: center;
+            }
+            p{
+                text-align:center!important;
+                color:#ffffff;
+                align-self: center;
+                margin: 0;
+            }
+        }
+    }
+    .number {
+        //width: 32px;
+        height: 32px;
+        color: #ffffff;
+        z-index: 3;
+        background: #100C17;
+    }
+    .pay-list::before {
+        width: 300px;
+        height: 1px;
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #828282;
+        top: 55%;
+        left: -150px;
+        color: #828282;
+        right: 0;
+        margin: auto; /* 置中 */
+    }
+    .signInput{
+        justify-content: center;
+        
+    }
+    .signform{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        input{
+            border-radius: 0%;
+        }
+        label{
+            font-weight: bold;
+        }
+    }
+    .form-check{
+        width: 100%;
+        input{
+            background: transparent;
+            border: 1px solid #ffffff;
+        }
+        label{
+            color:#ffffff;
+            display: flex;
+        }
+    }
+    .form-btn{
+        .fbtn{
+            border-radius: 4px;
+            color:#ffffff;
+            text-decoration: none;
+            width: 100%;
+            background: #6E01F8;
+            justify-content: center;
+            padding: 10px 0;
+        }
+    }
+    .willLogin{
+        p{
+            display: flex;
+            justify-content: end;
+            color:#ffffff;
+            a{
+                color:#ffffff;
+            }
+        }
+    }
+}
+.btn-close{
+    margin-left:auto;
+    border:1px solid #000;
+    padding: 15px 10px;
+}
+
+@include iphone{
+    .signin{
+        padding: 20px 0;
+        flex-direction: column;
+        .container{
+            padding: auto 12px;
+            h2{
+                letter-spacing: 50px;
+                font-size: 40px;
+                line-height: 60px;
+            }
+        }
+        .roundLogo{
+            p{
+                font-size: 32px;
+                line-height: 48px;
+            }
+        }
+        .signInBtns{
+            .container{
+                padding: 0 12px;
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+        .pay-list{
+            width: 100%;
+            padding: 0 12px;
+            &::before{
+                width: 280px;
+                left:-120px;
+            }
+        }
+        .signInput{
+            padding: 0 12px;
+            .signform{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.modal{
+    .modal-dialog-scrollable .modal-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 16px;
+        overflow: visible;
+    }
+    .btn {
+        &-terms {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            padding: 8px;
+    
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $white;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
+        }
+    
+        &-terms.btn-close {
+            opacity: 1;
+            z-index: 99999;
+        }
+    }
+    .modal-body {
+        // #NOTE: 寫在類別裡面就好
+        /* Firefox-specific styles */
+        scrollbar-width: thin;
+        /* thumb track */
+        scrollbar-color: #000 #e9e2f3;
+    
+        &::-webkit-scrollbar {
+            width: 0.325rem;
+            // width: 3px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            // 滾動條滑塊顏色
+            background-color: #000;
+    
+            border: 1px solid #e9e2f3;
+            border-radius: 12px;
+            // Firefox 兼容
+            -moz-border-radius: 12px;
+            // Chrome、Safari 兼容
+            -webkit-border-radius: 12px;
+    
+            &:hover {
+                box-shadow: inset 0 0 4px #11002d;
+            }
+        }
+    
+        // 滾動條軌道背景顏色
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+    }
+}

@@ -1,0 +1,92 @@
+
+
+.faq{
+    background: #E9E2F3;
+    .container{
+        margin: 0 auto;
+        max-width: 1296px;
+    }
+    .faqTitle{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 72px;
+        text-align: start;
+        letter-spacing:30px;
+        padding: 0 0 50px 0;
+        margin-bottom: 30px;
+        border-bottom: 2px dotted #ffffff;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .lgLeftQA{
+        width: 30%;
+        padding: 22px 0 0 0;
+        margin-right: 5%;
+    }
+    .lgRightQA{
+        width: 100%;
+    }
+    .QaSection{
+        margin-bottom: 20px;
+        a{
+            text-decoration: none;
+            color:#1F0F39;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+    .accordion-item, .accordion-button, 
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: #1F0F39;
+    }
+    .accordion-button {
+        color: #1F0F39;
+        padding: 22px 0 20px 0;
+        border-bottom: 3px dotted #ffffff;
+        &:focus {
+          box-shadow: none;
+          border-color: #fff;
+        }
+        &::after {
+          content: none;
+        }
+        .addIcon {
+          display: block;
+        }
+        .removeIcon {
+          display: none;
+        }
+        &:not(.collapsed) {
+          .addIcon {
+            display: none;
+          }
+          .removeIcon {
+            display: block;
+          }
+        }
+    }
+    .accordion-body {
+        padding: 0 ;
+    }
+}
+
+@include iphone{
+    .faq{
+        .container{
+            padding: auto 12px;
+
+        }
+        .faqTitle{
+            padding-bottom: 30px;
+            margin-bottom: 10px;
+        }
+        .lgLeftQA{
+            width: 100%;
+        }
+        .have-border{
+            border-bottom:2px solid #000;
+        }
+    }
+}

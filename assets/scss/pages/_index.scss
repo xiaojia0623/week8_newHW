@@ -1,0 +1,630 @@
+//banner
+.banner{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true);
+  background-position: center bottom;
+  background-size: cover;
+  height: 920px;
+  .container{
+    padding: 0 ;
+  }
+  .imgContent{
+    padding-top: 57px;
+    display: flex;
+    margin-bottom: 0px;
+    img{
+      margin: 0 auto;
+      width: 196px; height: 196px;
+      margin-left: 40%;
+      animation: move 6s linear infinite;
+    }
+    p{
+      font-size: 16px;
+      color:#ffffff;
+      border-top: 1px solid #ffffff;
+      width: 320px;
+      margin-left: auto;
+    }
+  }
+  .upWord{
+    .lws{
+      padding-bottom: 8px;
+    }
+    .rws{
+      letter-spacing:1.6px;
+      color:#AD93CF;
+    }
+  }
+  h4{
+    letter-spacing:16px;
+    font-size: 32px;
+  }p{
+    letter-spacing:4.8px;
+    font-size: 16px;
+  }
+}
+
+@keyframes move{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@include pad{
+  .banner{
+    height: 2489px;
+    .imgContent{
+      flex-direction: column-reverse;
+      margin: 0;
+      img{
+        margin: 0 auto;
+     }
+    }
+  }
+}
+
+@include iphone{
+  .banner{
+    height: 1775px;
+    .container{
+      margin: 0 auto;
+      padding:  0 12px;
+    }
+    .imgContent{
+      p{
+        width: 297px;
+      }
+    }
+    h4{
+      letter-spacing: 8px;
+    }
+  }
+}
+
+
+.fourCard{
+  a{
+    img{
+      width: 100%;
+    }
+    h4{
+      font-size: 32px;
+      top: 16px;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 1;
+    }
+  }
+}
+
+
+.skill{
+  background:radial-gradient(50% 50% at 50% 50%,#28085C 0%,#000 100%);
+  .skill-bg{
+    background-image:url(/assets/images/carousel_background.png);
+    background-size:50%;
+    background-repeat:no-repeat;
+  }
+}
+
+.swiperSection{
+  overflow:visible;
+  .swiper-slide{
+    //height:416px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      display:block;
+      width:100%;
+      height: 100%;
+      object-fit:cover;
+    }
+  }
+  .middlePic{
+    background-image:url(https://rochelwang1205.github.io/Alphabox/assets/carousel-500831ab.png);
+    background-size:cover;
+    background-position:center;
+    height: 560px;
+    width: 100%;
+    padding:16px;
+    .middlePic-title{
+      letter-spacing:24px;
+    }
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color:#fff;
+  //position:absolute;
+  margin-top:0;
+  width:auto;
+  height:31px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+  content:""
+}
+.circle{
+  color:#fff;
+  position:absolute;
+  top:-54px;
+}
+
+.mySwiper{
+  position:relative;
+  overflow:hidden;
+}
+
+
+@include pad{
+  .skill{
+    .skill-bg{
+      background-size: 100%;
+     }
+  }
+  .middlePic{
+    height:560px;
+    padding-right:40px;
+  .middlePic-title{
+    letter-spacing:32px;
+    margin-right:-32px;
+  }
+  }
+}
+@include iphone{
+  .skill{
+    .swiper-slide{
+      height:351px;
+      text-align: start;
+      align-items: end;
+      .middlePic{
+        background-image: url(/assets/images/carousel_mobile.png);
+        background-position: center center;
+        background-size: cover;
+        object-fit: cover;
+        max-width: 276px; height: 343px;
+        margin: 0;
+      }
+      .middlePic-title{
+        letter-spacing: 14px;
+      }
+    }
+  }
+}
+
+.homeNews{
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #28085C 0%, #000 100%);
+  padding-bottom: 50px;
+  h3{
+    letter-spacing: 40px;
+    font-size: 40px;
+    padding-bottom: 32px;
+    color:#ffffff;
+  }
+  .iconDate{
+    display: flex;
+    p{
+      letter-spacing: 10px;
+    }
+  }
+  .ft-title{
+    letter-spacing: 10px;
+  }
+  .listBorder{
+    border-right: 2px solid #ffffff;
+  }
+  .circleMore{
+    margin-top: 70px;
+  }
+  .moreWord{
+    text-align: end;
+    color: #fff;
+    margin-top: 70px;
+  }
+}
+
+@include iphone{
+  .homeNews{
+    .container{
+      padding:  0 12px;
+    }
+    h3{
+      letter-spacing: 25px;
+    }
+    .moblie-list{
+      padding:  0 12px;
+      .list{
+        border-right:none;
+      }
+      .listBorder{
+        border-right: 0px;
+      }
+    }
+  }
+}
+
+//首頁 使用者分享
+.userShare{
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #000 0%, #28085C 100%);
+  background-size: cover;
+  padding: 163px 0 ;
+  height: 934px;
+  overflow: hidden;
+  .container{
+    margin: 0 auto;
+    max-width: 1296px;
+  }
+  .user-title{
+    display: flex;
+    h3{
+      color:#ffffff;
+      letter-spacing: 20px;
+      font-size: 48px;
+      font-weight: bold;
+      margin-right: 20%;
+    }
+    p{
+      color:#ffffff;
+    }
+  }
+  .material-symbols-outlined{
+    max-width: 80px;
+    max-height: 80px;
+    color:#ffffff;
+  }
+}
+
+//首頁 swiper滑動區
+.userShare{
+  .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .swiper-slide {
+    padding:20px;
+    flex-direction:column;
+    width:416px; height:416px;
+    text-align: start;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color:#ffffff;
+    h3{
+      display: inline-flex;
+      span{
+        margin: 0 10px;
+      }
+    }
+  }
+  .swiperBottom{
+    text-align:start;
+    display:flex;
+    margin:auto 22% 0 0; padding:0;
+    .material-symbols-outlined{
+      width: 16px;height: 16px;
+      margin-right:15px;
+    }
+    p{
+      margin-bottom: 0;
+      display: flex;
+    }
+  }
+  
+  .swiper-scrollbar-drag {
+    background-color: #ffffff;
+  }
+  .swiper-scrollbar {
+    background-color: #000 ;
+  }
+  
+  .swiperBottomWord{
+    position: relative;
+    background:#28085C;
+    .background-word{
+      p{
+        position: absolute;
+        top:-193px; left:-485px;
+        font-size: 400px;
+        font-style:italic;
+        font-family: 'Shrikhand';
+        color:#300871;
+        z-index: 1;
+      };
+    }
+    p{
+      position: absolute;
+      top: 27px; left: 92px;
+      margin-top: auto;
+      color:#ffffff;
+      z-index: 3;
+    }
+  }
+}
+
+@include pad{
+  .userShare{
+    padding: 65px 0 30px 0;
+    .moblieList{
+      padding: 0 12px;
+      .mlist{
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+@include iphone{
+  .userShare{
+    padding:20px 0 20px 0px;
+    flex-direction: column;
+    height: 1772px;
+    .user-title{
+      flex-direction: column;
+      h3{
+        font-size: 40px;
+        letter-spacing: 29px;
+      }
+    }
+    .material-symbols-outlined{
+      max-width: 80px; max-height: 80px;
+    }
+  }
+
+  .moblieList{
+    padding: 0;
+    .mlist{
+      display: flex;
+      flex-direction: column;
+      padding:20px 17px;
+      height: 351px;
+    }
+    .list-header{
+      color:#ffffff;
+      margin-bottom: 40px;
+      h3{
+        display: flex;
+        align-items: flex-start;
+        font-size: 16px;
+      }
+      .wspot{
+        max-width: 8px; max-height: 8px;
+        margin: 0 15px;
+        justify-content: center;
+        display: flex;
+      }
+    }
+    .list-footer{
+      display: flex;
+      margin-top: auto;
+      p{
+        margin-left: 10px;
+      }
+    }
+  }
+  .swiperBottomWord{
+    position: relative;
+    .background-word{
+      p{
+        font-size:128px;
+        position: absolute;
+        top: -79px; left: -224px;
+      }
+    }
+  }
+}
+
+//首頁 聯絡我們
+.hcontact{
+  background: #1F0F39;
+  padding: 80px;
+  .container{
+    margin: 0 auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .infoTitle{
+    h4{
+      font-size: 48px;
+      font-weight: bold;
+      color:#ffffff;
+      line-height: 72px;
+      letter-spacing: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  .contIcon{
+    width: 12px; height: 12px;
+    margin-right: 20px;
+    color:#ffffff;
+  }
+  .whiteLine{
+    color:#ffffff;
+    border-radius: 10px;
+    width: 124px;
+    border: 12px solid #ffffff;
+  }
+  .userInfo{
+    width: 746px;
+   .infoIcon{
+      //width: 80px;height: 80px;
+      font-size: 80px;
+      color:#ffffff;
+    }
+  }
+  input, textarea{
+    border-radius: 0%;
+  }
+  label{
+    font-weight: bold;
+  }
+  textarea{
+    resize: none;
+  }
+  .form-btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    .fbtn{
+      padding:10px;
+      background: #6E01F8;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0%;
+      color:#ffffff;
+      &:hover{
+        background: #7000FF;
+      }
+    }
+  }
+}
+
+@include iphone{
+  .hcontact{
+    padding: 30px 0;
+  }
+  .container{
+    flex-direction: column;
+    .infoTitle{
+      h4{
+        font-size: 40px;
+        letter-spacing: 28px;
+      }
+    }
+    .whiteLine{
+      border: 8px solid #ffffff;
+    }
+    .spot-icons{
+      align-items: center;
+      .contIcon{
+        width: auto; height: auto;
+      }
+    }
+    .userInfo{
+      max-width: 100%;
+      .fbtn{
+        border-radius: 4px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//首頁 四張hover人物卡片
+.blackCards{
+  //diane
+  .dianeBlack{
+    padding: 24px 12px;
+    text-decoration: none;
+    background: #000;
+    background-blend-mode: darken;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+    @media (min-width: 768px) {
+      padding: 245px 40px 56px;
+    }
+    &:hover {
+      background-color: rgb(0 0 0 / .5);
+    }
+    h4{
+      font-family: "Shrikhand", cursive;
+      span{
+        font-size: 200px;
+        font-family: "Saira Extra Condensed", sans-serif;
+      }
+    }
+  }
+  //felix
+  .felixBlack{
+    padding: 24px 12px;
+    text-decoration: none;
+    background: #000;
+    background-blend-mode: darken;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+    @media (min-width: 768px) {
+      padding: 245px 40px 56px;
+    }
+    &:hover {
+      background-color: rgb(0 0 0 / .5);
+    }
+    h4{
+      font-family: "Shrikhand", cursive;
+      span{
+        font-size: 200px;
+        font-family: "Saira Extra Condensed", sans-serif;
+      }
+    }
+  }
+  //karina
+  .karinaBlack{
+    padding: 24px 12px;
+    text-decoration: none;
+    background: #000;
+    background-blend-mode: darken;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_verticalgle.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+    @media (min-width: 768px) {
+      padding: 245px 40px 56px;
+    }
+    &:hover {
+      background-color: rgb(0 0 0 / .5);
+    }
+    h4{
+      font-family: "Shrikhand", cursive;
+      span{
+        font-size: 200px;
+        font-family: "Saira Extra Condensed", sans-serif;
+      }
+    }
+  }
+  //karina
+  .VitoBlack{
+    padding: 24px 12px;
+    text-decoration: none;
+    background: #000;
+    background-blend-mode: darken;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true);
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+    @media (min-width: 768px) {
+      padding: 245px 40px 56px;
+    }
+    &:hover {
+      background-color: rgb(0 0 0 / .5);
+    }
+    h4{
+      font-family: "Shrikhand", cursive;
+      span{
+        font-size: 200px;
+        font-family: "Saira Extra Condensed", sans-serif;
+      }
+    }
+  }
+}
+@include iphone{
+  .blackCards{
+    ol{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+
+// character name btn
+.pill-btn-hover{
+    &:hover{
+      background-color: #ffffff;
+      color:#7000FF;
+    }
+    &.active{
+      background-color: #ffffff;
+      color:#000;
+    }
+}
+
+/*
+.btn{
+  text-decoration:none;
+  border:1px solid #000;
+  padding: 4px 80px 4px 80px;
+  border-radius:15px;
+  color:#fff;
+  background:#000;
+}
+*/
+
+
+// 使用 Material Icons
+.icon-hover{
+    color:#ffffff;
+    &:hover{
+        color:#7000FF;
+    }
+}
+

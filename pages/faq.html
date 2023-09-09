@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>FAQ頁</title>
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <%- include('./layout/header'); -%>
+    
+    <!-- faq title -->
+    <div class="faq">
+        <div class="container">
+            <h2 class="font-Noto faqTitle">FAQ</h2>
+            <div class="d-lg-flex justify-content-around">
+                <ul class="lgLeftQA list-unstyled">
+                    <li class="QaSection"><a href="#" class="font-noto-sans have-border">ALPHABOX+ 使用問題</a></li>
+                    <li class="QaSection"><a href="#" class="font-noto-sans">訂購與運送</a></li>
+                    <li class="QaSection"><a href="#" class="font-noto-sans">產品保養與維修</a></li>
+                </ul>
+                <ul class="lgRightQA list-unstyled" id="accordionFAQ">
+                    <li class="accordion-item">
+                        <button class="accordion-button collapsed d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h2 class="accordion-header row fs-6 align-items-center w-100 font-noto-sans">
+                            <span class="col-9">
+                              ALPHABOX+ 的使用方式是什麼？
+                            </span>
+                            <span class="col-3">
+                              <span class="material-symbols-outlined addIcon fs-40">
+                                add
+                              </span>
+                              <span class="material-symbols-outlined removeIcon fs-40">
+                                remove
+                              </span>
+                            </span>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse row" data-bs-parent="#accordionFAQ">
+                            <div class="col-9">
+                              <p class="accordion-body mt-2 mb-0 font-noto-sans">
+                                首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                              </p>
+                            </div>
+                          </div>
+                        </button>
+                    </li>
+                    <li class="accordion-item">
+                        <button class="accordion-button collapsed d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <h2 class="accordion-header row fs-6 align-items-center w-100 font-noto-sans">
+                            <span class="col-9">
+                                ALPHABOX+ 需要什麼樣的環境來使用？
+                            </span>
+                            <span class="col-3">
+                              <span class="material-symbols-outlined addIcon fs-40">
+                                add
+                              </span>
+                              <span class="material-symbols-outlined removeIcon fs-40">
+                                remove
+                              </span>
+                            </span>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse row" data-bs-parent="#accordionFAQ">
+                            <div class="col-9">
+                              <p class="accordion-body mt-2 mb-0 font-noto-sans">
+                                首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                              </p>
+                            </div>
+                          </div>
+                        </button>
+                    </li>
+                    <li class="accordion-item">
+                        <button class="accordion-button collapsed d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                          <h2 class="accordion-header row fs-6 align-items-center w-100 font-noto-sans">
+                            <span class="col-9">
+                                ALPHABOX+ 支援哪些語言？
+                            </span>
+                            <span class="col-3">
+                              <span class="material-symbols-outlined addIcon fs-40">
+                                add
+                              </span>
+                              <span class="material-symbols-outlined removeIcon fs-40">
+                                remove
+                              </span>
+                            </span>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse row" data-bs-parent="#accordionFAQ">
+                            <div class="col-9">
+                              <p class="accordion-body mt-2 mb-0 font-noto-sans">
+                                首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                              </p>
+                            </div>
+                          </div>
+                        </button>
+                    </li>
+                    <li class="accordion-item">
+                        <button class="accordion-button collapsed d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseForth" aria-expanded="true" aria-controls="collapseForth">
+                          <h2 class="accordion-header row fs-6 align-items-center w-100 font-noto-sans">
+                            <span class="col-9">
+                                ALPHABOX+ 的軟體更新方式為何？
+                            </span>
+                            <span class="col-3">
+                              <span class="material-symbols-outlined addIcon fs-40">
+                                add
+                              </span>
+                              <span class="material-symbols-outlined removeIcon fs-40">
+                                remove
+                              </span>
+                            </span>
+                          </h2>
+                          <div id="collapseForth" class="accordion-collapse collapse row" data-bs-parent="#accordionFAQ">
+                            <div class="col-9">
+                              <p class="accordion-body mt-2 mb-0 font-noto-sans">
+                                首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                              </p>
+                            </div>
+                          </div>
+                        </button>
+                    </li>
+                    <li class="accordion-item">
+                        <button class="accordion-button collapsed d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="true" aria-controls="collapseFifth">
+                          <h2 class="accordion-header row fs-6 align-items-center w-100 font-noto-sans">
+                            <span class="col-9">
+                                購買 ALPHABOX+ 後的售後服務如何？
+                            </span>
+                            <span class="col-3">
+                              <span class="material-symbols-outlined addIcon fs-40">
+                                add
+                              </span>
+                              <span class="material-symbols-outlined removeIcon fs-40">
+                                remove
+                              </span>
+                            </span>
+                          </h2>
+                          <div id="collapseFifth" class="accordion-collapse collapse row" data-bs-parent="#accordionFAQ">
+                            <div class="col-9">
+                              <p class="accordion-body mt-2 mb-0 font-noto-sans">
+                                首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                              </p>
+                            </div>
+                          </div>
+                        </button>
+                    </li>
+                    <li class="accordion-item">
+                        <button class="accordion-button collapsed d-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixth" aria-expanded="true" aria-controls="collapseSixth">
+                          <h2 class="accordion-header row fs-6 align-items-center w-100 font-noto-sans">
+                            <span class="col-9">
+                                ALPHABOX+ 與其他智能家居設備的相容性如何？
+                            </span>
+                            <span class="col-3">
+                              <span class="material-symbols-outlined addIcon fs-40">
+                                add
+                              </span>
+                              <span class="material-symbols-outlined removeIcon fs-40">
+                                remove
+                              </span>
+                            </span>
+                          </h2>
+                          <div id="collapseSixth" class="accordion-collapse collapse row" data-bs-parent="#accordionFAQ">
+                            <div class="col-9">
+                              <p class="accordion-body mt-2 mb-0 font-noto-sans">
+                                首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                              </p>
+                            </div>
+                          </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 首頁 表尾 -->
+    <%- include('./layout/footer'); -%>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
