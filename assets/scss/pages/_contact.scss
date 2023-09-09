@@ -1,0 +1,224 @@
+
+
+//contact us title
+.contact{
+    background: radial-gradient(circle closest-side at center, #28085C, #000000);
+    padding: 5% 0 0px 0;
+}
+.contact-title{
+    .container{
+        margin: 0 auto;
+        max-width: 1296px;
+        h2{
+            letter-spacing: 20px;
+            line-height: 96px;
+            font-size: 64px;
+        }
+    }  
+}
+.contact-content{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    .form-control{
+        resize:none;
+    }
+    label{
+        font-weight: bold;
+    }
+    .form-btn{
+        .fbtn{
+            border-radius: 4px;
+            color:#ffffff;
+            text-decoration: none;
+            width: 100%;
+            background: #6E01F8;
+            justify-content: center;
+            padding: 10px 0;
+        }
+    }
+    .workTime{
+        .sTitle{
+            color:#FFFFFF80;
+        }
+        .ans{
+            color:#ffffff;
+            a{
+                text-decoration: none;
+                color:#ffffff;
+            }
+        }
+    }
+}
+.contact-menu{
+    border-top: 1px solid #ffffff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    .contactItem{
+        margin-right: 20px;
+        .contat-nav{
+            text-decoration: none;
+            color:#ffffff;
+            &:hover{
+                color:#6E01F8;
+            }
+        }
+    }
+}
+
+@include iphone{
+    .contact-title{
+        .container{
+            padding: auto 12px;
+            h2{
+                font-size: 40px;
+                line-height: 60px;
+                letter-spacing: 15px;
+            }
+        }
+
+    }
+    .contact-content{
+        flex-direction: column;
+        padding: 0 12px;
+        width: 100%;
+        .content-form{
+            width: 100%;
+        }
+    }
+    .form-btn{
+        margin-bottom: 30px;
+    }
+    .workTime{
+        margin-bottom: 30px;
+        li{
+            margin: auto 0;
+        }
+    }
+    .contact-menu{
+        flex-direction: column;
+        max-width: 90%;
+        padding: 15px 0px;
+        margin: 0 auto;
+        .contactItem{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// contact - choice role
+.choice{
+    background: #ffffff;
+    padding:50px 0;
+    .container{
+        margin: 0 auto;
+        max-width: 1296px;
+    }
+    .choice-title{
+        text-align: start;
+        h2{
+            font-size: 64px;
+            font-weight: bold;
+            line-height: 96px;
+            letter-spacing: 20px;
+            color:#1F0F39;
+        }
+        p{
+            font-size: 48px;
+            line-height: 72px;
+            font-weight: bold;
+            color:#000;
+            span{
+                color:#6E01F8;
+                margin-right: 20px;
+            }
+        }
+    }
+    .choice-content{
+        .roleDiane, .roleKarina{
+            position: relative;
+            top:0;left:0; right:0;
+            img{
+                width: 1050px;height: auto;
+                object-fit: cover;
+            }
+            p{
+                color:#ffffff;
+                position: absolute;
+                top:25%;left:5%;
+                font-size: 64px;
+                font-style: italic;
+                line-height: 96px;
+            }
+        }
+        .roleFelix, .roleVito{
+            position: relative;
+            top:0;left:0; right:0;
+            img{
+                width: 1050px;height: auto;
+                object-fit: cover;
+            }
+            p{
+                color:#ffffff;
+                position: absolute;
+                top:25%;right:5%;
+                font-size: 64px;
+                font-style: italic;
+                line-height: 96px;
+            }
+        }
+    }
+}
+
+@include iphone{
+    .choice{
+        padding: 0px;
+        .choice-title{
+            padding:  auto 12px;
+            h2{
+                font-size: 40px;
+                letter-spacing: 20px;
+                line-height: 60px;
+            }
+            p{
+                font-size: 22px;
+                line-height: 36px;
+                span{
+                    margin: 0;
+                }
+            }
+        }
+        .choice-content{
+            .roleDiane, .roleKarina{
+                position: relative;
+                top:0;left:0; right:0;
+                img{
+                    width: 100%;height: auto;
+                    object-fit: cover;
+                }
+                p{
+                    position: absolute;
+                    top:30%;left:5%;
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+            }
+            .roleFelix, .roleVito{
+                position: relative;
+                top:0;left:0; right:0;
+                img{
+                    width: 100%;height: auto;
+                    object-fit: cover;
+                }
+                p{
+                    position: absolute;
+                    top:30%;right:5%;
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
